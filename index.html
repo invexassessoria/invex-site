@@ -24,9 +24,19 @@
       background-size: 600% 600%;
       animation: gradient-x 10s ease infinite;
     }
+    .background-animated {
+      background: linear-gradient(270deg, #0077ff, #00ffcc, #0077ff);
+      background-size: 600% 600%;
+      animation: gradientFlow 20s ease infinite;
+    }
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
   </style>
 </head>
-<body class="bg-black text-white">
+<body class="background-animated text-white">
   <header class="py-10 flex justify-center">
     <svg width="240" height="140" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
       <style>
