@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invex Assessoria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @keyframes pulse {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.5); }
+    }
+    .animated-shape {
+      animation: pulse 3s infinite ease-in-out;
+    }
+    @keyframes gradient-x {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient-x {
+      background: linear-gradient(270deg, #0077ff, #00ffcc, #0077ff);
+      background-size: 600% 600%;
+      animation: gradient-x 10s ease infinite;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <header class="py-10 flex justify-center">
+    <svg width="240" height="140" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .text {
+          fill: white;
+          font-family: 'Arial', sans-serif;
+          text-anchor: middle;
+        }
+      </style>
+      <text x="160" y="60" font-size="28" class="text">INVEX</text>
+      <text x="160" y="90" font-size="14" class="text" letter-spacing="3">ASSESSORIA</text>
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#0077ff">
+            <animate attributeName="stop-color" values="#0077ff; #00ffcc; #0077ff" dur="6s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="#00ffcc">
+            <animate attributeName="stop-color" values="#00ffcc; #0077ff; #00ffcc" dur="6s" repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+      </defs>
+      <path d="M120 100 Q160 130 200 100 Q160 140 120 100 Z" fill="url(#grad)" class="animated-shape" />
+    </svg>
+  </header>
+  <section class="text-center px-6 py-20" data-aos="fade-up">
+    <h1 class="text-4xl font-bold mb-4">Transformamos marketing fraco em vendas fortes</h1>
+    <p class="text-lg max-w-2xl mx-auto">Somos a força por trás do crescimento real de pequenas e médias empresas. Estratégia, automação e performance para escalar com inteligência.</p>
+  </section>
+  <section class="bg-neutral-900 py-20 px-6" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Quem Somos</h2>
+      <p class="text-lg">A INVEX é a ponte entre empresas com potencial e o marketing de verdade. Atuamos com criação, tráfego e automação integrados para entregar resultados consistentes e escaláveis.</p>
+    </div>
+  </section>
+  <section class="py-20 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Criativos para Vídeos</h3>
+          <p>Reels, Shorts, vídeos de vendas e criativos para tráfego pago.</p>
+        </div>
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Design Profissional</h3>
+          <p>Identidade visual, posts para Instagram e apresentações de impacto.</p>
+        </div>
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Tráfego Pago</h3>
+          <p>Campanhas segmentadas no Facebook Ads, Google Ads e YouTube Ads.</p>
+        </div>
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Copywriting</h3>
+          <p>Textos persuasivos para anúncios, páginas de venda e redes sociais.</p>
+        </div>
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Automação de WhatsApp</h3>
+          <p>Criação de funis automatizados com bots e mensagens programadas.</p>
+        </div>
+        <div class="bg-neutral-800 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Consultoria Estratégica</h3>
+          <p>Diagnóstico completo, estratégia e plano de ação para iniciantes no marketing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-neutral-900 py-20 px-6" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Por Que Escolher a INVEX?</h2>
+      <ul class="text-lg space-y-4">
+        <li>✅ Estratégia personalizada com foco em resultado</li>
+        <li>✅ Integração completa entre criativos, tráfego e automação</li>
+        <li>✅ Tom de voz direto, persuasivo e profissional</li>
+        <li>✅ Suporte próximo e estratégico para empresas que querem crescer de verdade</li>
+      </ul>
+    </div>
+  </section>
+  <section class="py-20 text-center text-white animate-gradient-x" data-aos="fade-up">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Pronto para escalar com marketing de verdade?</h2>
+      <p class="text-lg mb-6">Fale com a INVEX e descubra como transformar o seu posicionamento em vendas reais.</p>
+      <a href="mailto:contato@invexassessoria.com" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800">contato@invexassessoria.com</a>
+    </div>
+  </section>
+  <footer class="py-6 text-center text-sm text-white animate-gradient-x">
+    <p>&copy; 2025 Invex Assessoria. Todos os direitos reservados.</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
